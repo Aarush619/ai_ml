@@ -1,0 +1,4 @@
+tokenizer.word_index
+#https://stackoverflow.com/questions/51956000/what-does-keras-tokenizer-method-exactly-do
+#to access dict of tokenizer
+
