@@ -1,0 +1,2 @@
+#https://machinelearningmastery.com/timedistributed-layer-for-long-short-term-memory-networks-in-python/
+The input for LSTMs must be three dimensional. We can reshape the 2D sequence into a 3D sequence with 5 samples, 1 time step, and 1 feature.
