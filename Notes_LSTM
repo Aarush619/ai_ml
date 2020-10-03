@@ -1,2 +1,13 @@
+Time Distributed LSTM layer:
 #https://machinelearningmastery.com/timedistributed-layer-for-long-short-term-memory-networks-in-python/
-The input for LSTMs must be three dimensional. We can reshape the 2D sequence into a 3D sequence with 5 samples, 1 time step, and 1 feature.
+1. The input for LSTMs must be three dimensional. We can reshape the 2D sequence into a 3D sequence with 5 samples, 1 time step, and 1 feature.
+2. The batch size was set to the number of samples in the epoch to avoid having to make the LSTM stateful and manage state resets manually, 
+   although this could just as easily be done in order to update weights after each sample is shown to the network.
+   
+No.of parameters in an LSTM layer:
+https://medium.com/@priyadarshi.cse/calculating-number-of-parameters-in-a-lstm-unit-layer-7e491978e1e4#:~:text=Functions%20in%20a%20LSTM%20Unit%20%3A%2D&text=Where%2C%20W%2C%20U%2C%20b,*133*%20100%20%3D%2053200.
+
+Insights into internals of LSTM layer:
+https://datascience.stackexchange.com/questions/25463/questions-about-lstm-cells-units-and-inputs#:~:text=The%20key%20thing%20to%20understanding,an%20LSTM%20cell%20are%20vectors.&text=So%20each%20neuron%20in%20the,state%20and%20a%20layer%20output.
+
+https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/
