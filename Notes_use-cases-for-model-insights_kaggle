@@ -1,3 +1,6 @@
+https://www.kaggle.com/dansbecker/use-cases-for-model-insights
+
+##################################################################################################
 data = pd.read_csv('../input/new-york-city-taxi-fare-prediction/train.csv', nrows=50000)
 
 # Remove data with extreme outlier coordinates or negative fares
@@ -11,3 +14,4 @@ data = data.query('pickup_latitude > 40.7 and pickup_latitude < 40.8 and ' +
                   )
 
 y = data.fare_amount
+#################################################################################################
