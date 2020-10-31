@@ -1,0 +1,13 @@
+data = pd.read_csv('../input/new-york-city-taxi-fare-prediction/train.csv', nrows=50000)
+
+# Remove data with extreme outlier coordinates or negative fares
+# You can query a dataframe object in a query format too
+
+data = data.query('pickup_latitude > 40.7 and pickup_latitude < 40.8 and ' +
+                  'dropoff_latitude > 40.7 and dropoff_latitude < 40.8 and ' +
+                  'pickup_longitude > -74 and pickup_longitude < -73.9 and ' +
+                  'dropoff_longitude > -74 and dropoff_longitude < -73.9 and ' +
+                  'fare_amount > 0'
+                  )
+
+y = data.fare_amount
