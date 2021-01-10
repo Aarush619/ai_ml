@@ -11,3 +11,4 @@ Insights into internals of LSTM layer:
 https://datascience.stackexchange.com/questions/25463/questions-about-lstm-cells-units-and-inputs#:~:text=The%20key%20thing%20to%20understanding,an%20LSTM%20cell%20are%20vectors.&text=So%20each%20neuron%20in%20the,state%20and%20a%20layer%20output.
 
 https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/
+1. Hidden output(ht) and hidden state(ct) from each LSTM unit will be a scalar value.
