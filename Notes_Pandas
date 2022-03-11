@@ -3,3 +3,6 @@ data = data.groupby('intent')['questions'].apply(list).reset_index()
 
 # Converting dataframe to a dict
 dict1 = data.to_dict('records')
+
+# Split (explode) pandas dataframe string entry to separate rows
+df = df.explode('column_name')
