@@ -1,0 +1,5 @@
+# Group by the first column and get second column as lists in rows
+data = data.groupby('intent')['questions'].apply(list).reset_index()
+
+# Converting dataframe to a dict
+dict1 = data.to_dict('records')
