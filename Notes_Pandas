@@ -6,3 +6,6 @@ dict1 = data.to_dict('records')
 
 # Split (explode) pandas dataframe string entry to separate rows
 df = df.explode('column_name')
+
+# Returning two columns using apply function
+data['sentiment_dict'], data['sentiment'] = zip(*data['Review'].progress_apply(sentiment))
